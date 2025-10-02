@@ -25,8 +25,7 @@ async function listar() {
                 div.innerHTML = `
                     <strong>ID:</strong> ${user.id}<br>
                     <strong>Nome:</strong> ${user.nome}<br>
-                    <strong>Email:</strong> ${user.email}<br>
-                    <strong>Senha:</strong> ${user.senha}
+                    <strong>Email:</strong> ${user.email}
                 `;
                 usersDiv.appendChild(div);
             });
@@ -55,7 +54,7 @@ async function cadastrar() {
     const hash = await gerarHash(senha);
     console.log("hash gerado:", hash);
     try {
-        const response = await fetch(`${api}/cadastrar`, {
+        const response = await fetch(`${api}/cadastro`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nome, email, senha: hash })

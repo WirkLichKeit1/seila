@@ -1,35 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listar Usuários</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cadastro de Usuário</h1>
-    
-    <form onsubmit="event.preventDefault(); cadastrar();">
+    <h1>Login</h1>
+
+    <form onsubmit="event.preventDefault(); login();">
         <label for="mome">Nome:</label>
         <input type="text" id="nome" placeholder="Nome do Usuário:" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="E-mail do Usuário:" required>
         
         <label for="senha">Senha:</label>
         <input type="password" id="senha" placeholder="Senha do Usuário:" required>
         
-        <button type="submit">Enviar dados</button>
+        <button type="submit">Login</button>
     </form>
-
-    <h1>Listagem de Usuários</h1>
-
-    <div id="users">
-        <button id="listarBtn" onclick="listar()">Listar Usuários</button>
-    </div>
-
-    <div id="users"></div>
-
-    <script src="/js/script.js"></script>
+    <script src="/js/login.js" defer></script>
 </body>
 </html>
