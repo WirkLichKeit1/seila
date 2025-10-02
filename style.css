@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1f1f1f;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ccc;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #15105c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #040a5e;
+}
+
+#listarBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #15105c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#users {
+    margin-top: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #1f1f1f;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.user-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.user-item:last-child {
+    border-bottom: none;
+}
