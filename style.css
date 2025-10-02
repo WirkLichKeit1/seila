@@ -1,79 +1,72 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background: #1f1f1f;
-    padding: 20px;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
 }
 
+/* Título */
 h1 {
-    text-align: center;
-    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
 }
 
+/* Estilo do formulário */
 form {
-    max-width: 400px;
-    margin: 0 auto;
-    background: #444;
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
 }
 
+/* Labels */
 label {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
-input {
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    font-size: 1rem;
 }
 
+/* Botão */
 button {
-    margin-top: 15px;
     width: 100%;
-    padding: 10px;
-    background: #15105c;
-    color: white;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #182848;
+    font-size: 1rem;
+    font-weight: bold;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background: #040a5e;
-}
-
-#listarBtn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background: #15105c;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-#users {
-    margin-top: 30px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.user-item {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-}
-
-.user-item:last-child {
-    border-bottom: none;
+    background-color: #dce0e6;
 }
